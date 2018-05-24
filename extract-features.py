@@ -9,12 +9,16 @@ import os, cv2
 import numpy as np
 
 if __name__ == "__main__":
-    path = r'C:\Users\KinectProcessing\Desktop\training_mmse_pentagons'
+
+    # file structure for feature ies
+    path = r'\training_mmse_pentagons' #change to the base dir for files
     pos_im_path = os.path.join(path, 'pos_pent')
     neg_im_path = os.path.join(path, 'neg_pent')
     pos_feat_ph = os.path.join(path, "pos_feat_ph")
     neg_feat_ph = os.path.join(path, "neg_feat_ph")
 
+    #parameters for HOG
+    #reference: http://scikit-image.org/docs/dev/auto_examples/features_detection/plot_hog.html
     orientations = 9
     pixels_per_cell = (8, 8)
     cells_per_block = (3, 3)
@@ -36,7 +40,7 @@ if __name__ == "__main__":
             fd, _ = hog(im, orientations, pixels_per_cell, cells_per_block, visualise = True, transform_sqrt=True)
         fd_name = os.path.split(im_path)[1].split(".")[0] + ".feat"
         fd_path = os.path.join(pos_feat_ph, fd_name)
-        joblib.dump(fd, fd_path)
+        joblib.dump(fd, fd_path) #dumps feature detection in the save path
     print("Positive features saved in {}".format(pos_feat_ph))
 
     print("Calculating the descriptors for the negative samples and saving them")
