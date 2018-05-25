@@ -106,10 +106,7 @@ Image(filename=r'training_mmse_pentagons\pos_pent\pos_2.png')
 ```
 
 
-
-
-![png](images\output_10_0.png)
-
+![png](https://github.com/ttruty/object-detector/blob/master/images/sample_pos.png)
 
 
 Negative image feature input for MMSE example
@@ -120,10 +117,7 @@ from IPython.display import Image
 Image(filename=r'training_mmse_pentagons\neg_pent\neg_3.png') 
 ```
 
-
-
-
-![png](images\output_12_0.png)
+![png](https://github.com/ttruty/object-detector/blob/master/images/sample_neg.png)
 
 
 
