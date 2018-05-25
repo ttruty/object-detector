@@ -613,11 +613,11 @@ plt.imshow(im,cmap='gray')
 plt.show()
 ```
 
-    sample_16.png
+    ![png](images/output_10_0.png)
     
 
 
-![png](images\output_25_1.png)
+![png](images/output_25_1.png)
 
 
 ## Find the all the contours in the image using the cv2.find contours method and bound
@@ -659,7 +659,7 @@ plt.show()
 ```
 
 
-![png](images\output_27_0.png)
+![png](images/output_27_0.png)
 
 
 
@@ -717,7 +717,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_3.png)
+![png](images/output_28_3.png)
 
 
     DecisionTreeCLassifier.model
@@ -728,7 +728,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_5.png)
+![png](images/output_28_5.png)
 
 
     GaussianNB.model
@@ -739,7 +739,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_7.png)
+![png](images/output_28_7.png)
 
 
     GaussianProcessClassifier.model
@@ -750,7 +750,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_9.png)
+![png](images/output_28_9.png)
 
 
     KNN.model
@@ -761,7 +761,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_11.png)
+![png](images/output_28_11.png)
 
 
     LIN_SVM.model
@@ -772,7 +772,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_13.png)
+![png](images/output_28_13.png)
 
 
     MLPClassifier.model
@@ -783,7 +783,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_15.png)
+![png](images/output_28_15.png)
 
 
     QuadraticDiscriminantAnalysis.model
@@ -794,7 +794,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_17.png)
+![png](images/output_28_17.png)
 
 
     RandomForest.model
@@ -805,7 +805,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_19.png)
+![png](images/output_28_19.png)
 
 
     SVC.model
@@ -816,7 +816,7 @@ for model in model_list:
     
 
 
-![png](images\output_28_21.png)
+![png](images/output_28_21.png)
 
 
     svm.model
@@ -827,5 +827,5 @@ for model in model_list:
     
 
 
-![png](images\output_28_23.png)
+![png](images/output_28_23.png)
 
