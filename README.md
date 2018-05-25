@@ -616,7 +616,6 @@ plt.show()
     ![png](https://github.com/ttruty/object-detector/blob/master/images/output_10_0.png)
     
 
-
 ![png](https://github.com/ttruty/object-detector/blob/master/images/output_25_1.png)
 
 
