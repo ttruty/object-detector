@@ -47,7 +47,7 @@ def test_classifiers(data, lables, clf):
 
 
 if __name__ == "__main__":
-    path = r'E:\pent_python\training_mmse_pentagons'
+    path = r'training_mmse_pentagons'
     pos_im_path = os.path.join(path, 'pos_pent')
     neg_im_path = os.path.join(path, 'neg_pent')
     

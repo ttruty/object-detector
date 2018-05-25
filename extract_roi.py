@@ -1,7 +1,7 @@
 import corner_dets_methods
 import os
 
-dir_name = r'F:\pent_python\pent_bins\all_pos_trial'
+dir_name = r'ENTER THE DIR YOU WANT TO WALK'
 save_file = os.path.join(dir_name, 'roi_file.txt')
 
 for root,  dirs, files in os.walk(dir_name):

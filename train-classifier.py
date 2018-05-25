@@ -12,7 +12,7 @@ import numpy as np
 
 
 if __name__ == "__main__":
-    path = r'C:\Users\KinectProcessing\Desktop\training_mmse_pentagons'
+    path = r'training_mmse_pentagons'
     pos_im_path = os.path.join(path, 'pos_pent')
     neg_im_path = os.path.join(path, 'neg_pent')
     
