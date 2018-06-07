@@ -13,11 +13,11 @@ import numpy as np
 
 if __name__ == "__main__":
     path = r'training_mmse_pentagons'
-    pos_im_path = os.path.join(path, 'pos_pent')
-    neg_im_path = os.path.join(path, 'neg_pent')
+    pos_im_path = os.path.join(path, 'kim_pos_img')
+    neg_im_path = os.path.join(path, 'kim_neg_img')
     
-    pos_feat_ph = os.path.join(path, "pos_feat_ph")
-    neg_feat_ph = os.path.join(path, "neg_feat_ph")
+    pos_feat_ph = os.path.join(path, "kim_pos_feat_ph")
+    neg_feat_ph = os.path.join(path, "kim_neg_feat_ph")
 
     model_path =  os.path.join(path, "models", "svm.model")
 
