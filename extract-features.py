@@ -12,11 +12,11 @@ if __name__ == "__main__":
 
     # file structure for feature ies
     path = r'\training_mmse_pentagons' #change to the base dir for files
-    pos_im_path = os.path.join(path, 'pos_pent')
-    neg_im_path = os.path.join(path, 'neg_pent')
-    pos_feat_ph = os.path.join(path, "pos_feat_ph")
-    neg_feat_ph = os.path.join(path, "neg_feat_ph")
-
+    pos_im_path = os.path.join(path, 'kim_pos_img')
+    neg_im_path = os.path.join(path, 'kim_neg_img')
+    pos_feat_ph = os.path.join(path, "kim_pos_feat_ph")
+    neg_feat_ph = os.path.join(path, "kim_neg_feat_ph")
+    print(os.listdir(path))
     #parameters for HOG
     #reference: http://scikit-image.org/docs/dev/auto_examples/features_detection/plot_hog.html
     orientations = 9
@@ -32,8 +32,10 @@ if __name__ == "__main__":
     if not os.path.isdir(neg_feat_ph):
         os.makedirs(neg_feat_ph)
     print("Calculating the descriptors for the positive samples and saving them")
+    print(pos_im_path)
+    print(os.listdir(pos_im_path))
     for im_path in glob.glob(os.path.join(pos_im_path, "*")):
-        #print(im_path)
+        print(im_path)
         im = cv2.imread(im_path, cv2.IMREAD_GRAYSCALE)
         im = cv2.resize(im, (128,128))
         if des_type == "HOG":
