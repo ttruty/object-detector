@@ -27,9 +27,9 @@ def detection(img, model_path):
     #    return 0
     return pred
 
-path = r'training_mmse_pentagons'
+path = os.getcwd()
 test_im_path = os.path.join(path, 'test_images')
-model_path = r'training_mmse_pentagons\models\svm.model'
+model_path = os.path.join(path, 'models', 'svm.model')
 print(test_im_path)
 for im_path in glob.glob(os.path.join(test_im_path, "*")):
     print(im_path)

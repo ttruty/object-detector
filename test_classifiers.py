@@ -47,9 +47,9 @@ def test_classifiers(data, lables, clf):
 
 
 if __name__ == "__main__":
-    path = r'training_mmse_pentagons'
-    pos_im_path = os.path.join(path, 'kim_pos_img')
-    neg_im_path = os.path.join(path, 'kim_neg_img')
+    path = os.getcwd()
+    pos_im_path = os.path.join(path, 'pos_img')
+    neg_im_path = os.path.join(path, 'neg_img')
     
     pos_feat_ph = os.path.join(path, "pos_feat_ph")
     neg_feat_ph = os.path.join(path, "neg_feat_ph")
@@ -99,8 +99,8 @@ if __name__ == "__main__":
         clf.fit(fds, labels)
         # If feature directories don't exist, create them
         test_classifiers(fds, labels, clf)
-        joblib.dump(clf, model_path)
-        print("Classifier saved to {}".format(model_path))
+        #joblib.dump(clf, model_path)
+        #print("Classifier saved to {}".format(model_path))
 
     clf_type = "DecisionTreeCLassifier"
     if clf_type is "DecisionTreeCLassifier":
