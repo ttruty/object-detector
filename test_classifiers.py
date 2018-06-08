@@ -91,81 +91,81 @@ if __name__ == "__main__":
         clf.fit(fds, labels)
         # If feature directories don't exist, create them
         test_classifiers(fds, labels, clf)
-
-    clf_type = "RandomForest"
-    if clf_type is "RandomForest":
-        clf = RandomForestClassifier(n_jobs=2)
-        print("Testing Random Forest Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-        #joblib.dump(clf, model_path)
-        #print("Classifier saved to {}".format(model_path))
-
-    clf_type = "DecisionTreeCLassifier"
-    if clf_type is "DecisionTreeCLassifier":
-        clf = DecisionTreeClassifier(random_state=0)
-        print("Testing Decision Tree Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-
-    clf_type = "GaussianProcessClassifier"
-    if clf_type is "GaussianProcessClassifier":
-        #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
-        clf = GaussianProcessClassifier()
-        print("Testing Gaussian Process Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-
-    clf_type = "MLPClassifier"
-    if clf_type is "MLPClassifier":
-        #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
-        clf = MLPClassifier(alpha=1)
-        print("Testing MLPClassifier Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-
-    clf_type = "SVC"
-    if clf_type is "SVC":
-        #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
-        clf = SVC()
-        print("Testing SVC Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-        
-    clf_type = "AdaBoost"
-    if clf_type is "AdaBoost":
-        #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
-        clf = AdaBoostClassifier()
-        print("Testing AdaBoost Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-
-    clf_type = "GaussianNB"
-    if clf_type is "GaussianNB":
-        #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
-        clf = GaussianNB()
-        print("Testing GaussianNB Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-
-    clf_type = "QuadraticDiscriminantAnalysis"
-    if clf_type is "QuadraticDiscriminantAnalysis":
-        #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
-        clf = QuadraticDiscriminantAnalysis()
-        print("Testing QuadraticDiscriminantAnalysis Classifier")
-        clf.fit(fds, labels)
-        # If feature directories don't exist, create them
-        test_classifiers(fds, labels, clf)
-        
-
-##        ## SAVE MODEL
-##        joblib.dump(clf, model_path)
-##        print("Classifier saved to {}".format(model_path))
-
+#
+#     clf_type = "RandomForest"
+#     if clf_type is "RandomForest":
+#         clf = RandomForestClassifier(n_jobs=2)
+#         print("Testing Random Forest Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#         #joblib.dump(clf, model_path)
+#         #print("Classifier saved to {}".format(model_path))
+#
+#     clf_type = "DecisionTreeCLassifier"
+#     if clf_type is "DecisionTreeCLassifier":
+#         clf = DecisionTreeClassifier(random_state=0)
+#         print("Testing Decision Tree Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#
+#     clf_type = "GaussianProcessClassifier"
+#     if clf_type is "GaussianProcessClassifier":
+#         #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
+#         clf = GaussianProcessClassifier()
+#         print("Testing Gaussian Process Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#
+#     clf_type = "MLPClassifier"
+#     if clf_type is "MLPClassifier":
+#         #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
+#         clf = MLPClassifier(alpha=1)
+#         print("Testing MLPClassifier Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#
+#     clf_type = "SVC"
+#     if clf_type is "SVC":
+#         #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
+#         clf = SVC()
+#         print("Testing SVC Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#
+#     clf_type = "AdaBoost"
+#     if clf_type is "AdaBoost":
+#         #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
+#         clf = AdaBoostClassifier()
+#         print("Testing AdaBoost Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#
+#     clf_type = "GaussianNB"
+#     if clf_type is "GaussianNB":
+#         #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
+#         clf = GaussianNB()
+#         print("Testing GaussianNB Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#
+#     clf_type = "QuadraticDiscriminantAnalysis"
+#     if clf_type is "QuadraticDiscriminantAnalysis":
+#         #kernel = 1.0 * RBF([1.0, 1.0])  # for GPC
+#         clf = QuadraticDiscriminantAnalysis()
+#         print("Testing QuadraticDiscriminantAnalysis Classifier")
+#         clf.fit(fds, labels)
+#         # If feature directories don't exist, create them
+#         test_classifiers(fds, labels, clf)
+#
+#
+# ##        ## SAVE MODEL
+# ##        joblib.dump(clf, model_path)
+# ##        print("Classifier saved to {}".format(model_path))
+#
